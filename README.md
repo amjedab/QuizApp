@@ -5,19 +5,28 @@ This app displays the questions cards. It is implemented using the following tec
 - **Kotlin**
 - **MVVM (Model-View-ViewModel)**
 - **Jetpack Compose**
+- **Material3**
 
-# Android Quiz Questions
+## Functionality:
 
-## True/False Question:
+- The app consist of a single screen that transitions between questions.
+- Display the question and potential answers, allowing the user to select an answer and move on to another question.
+- Display one question at a time.
+- App to handles configuration changes (e.g., rotation) and lifecycle changes (e.g., backgrounding the app).
+- Use a 'Previous' & 'Next' button navigation pattern to move between questions.
+
+## Android Quiz App that uses Compose to display four types of questions
+
+- **True/False Question:**
+
 **Question:**  
 "True or False: ViewModel survives configuration changes and holds UI-related data."
 
 **Answer:**  
 True
 
----
-
-## Single Choice Question:
+- **Single Choice Question:**
+   
 **Question:**  
 "Which layout is recommended when building flexible, responsive UI components in Jetpack Compose?"
 
@@ -30,9 +39,8 @@ True
 **Answer:**  
 c) Column
 
----
-
-## Multi-Choice Question:
+- **Multi-Choice Question:**
+  
 **Question:**  
 "Which of the following are part of the Android Jetpack suite? (Choose all that apply)"
 
@@ -47,16 +55,13 @@ c) Column
 - b) Hilt  
 - d) Navigation Component
 
----
-
-## Text Input Question:
+- **Text Input Question:**
 
 **Question:**  
 "What is the latest android OS version?"
 
 **Answers:** 
 15
-
 
 
 
