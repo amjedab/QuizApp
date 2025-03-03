@@ -26,10 +26,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.cricut.quizapp.R
 import com.cricut.quizapp.model.Question
 import com.cricut.quizapp.model.QuestionType
 import com.cricut.quizapp.viewmodel.QuizViewModel
@@ -51,7 +53,7 @@ fun QuizScreen(viewModel: QuizViewModel = viewModel()) {
     horizontalAlignment = Alignment.CenterHorizontally,
     verticalArrangement = Arrangement.Center
   ) {
-    Text(text = "Question ${currentIndex + 1}", style = MaterialTheme.typography.titleLarge)
+    Text(text = stringResource(R.string.question_number, currentIndex + 1), style = MaterialTheme.typography.titleLarge)
 
     Spacer(modifier = Modifier.height(16.dp))
 
@@ -71,13 +73,13 @@ fun QuizScreen(viewModel: QuizViewModel = viewModel()) {
         onClick = { viewModel.previousQuestion() },
         enabled = currentIndex > 0
       ) {
-        Text("Previous")
+        Text(stringResource(R.string.previous))
       }
       Button(
         onClick = { viewModel.nextQuestion() },
         enabled = currentIndex < currentQuestion.value.options.size - 1
       ) {
-        Text("Next")
+        Text(stringResource(R.string.next))
       }
     }
   }
