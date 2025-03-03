@@ -17,7 +17,7 @@ This app displays the questions cards. It is implemented using the following tec
 
 ## Android Quiz App that uses Compose to display four types of questions
 
-- **True/False Question:**
+**1.True/False Question:**
 
 **Question:**  
 "True or False: ViewModel survives configuration changes and holds UI-related data."
@@ -25,7 +25,7 @@ This app displays the questions cards. It is implemented using the following tec
 **Answer:**  
 True
 
-- **Single Choice Question:**
+**2.Single Choice Question:**
    
 **Question:**  
 "Which layout is recommended when building flexible, responsive UI components in Jetpack Compose?"
@@ -39,7 +39,7 @@ True
 **Answer:**  
 c) Column
 
-- **Multi-Choice Question:**
+**3.Multi-Choice Question:**
   
 **Question:**  
 "Which of the following are part of the Android Jetpack suite? (Choose all that apply)"
@@ -55,7 +55,7 @@ c) Column
 - b) Hilt  
 - d) Navigation Component
 
-**Text Input Question:**
+**4.Text Input Question:**
 
 **Question:**  
 "What is the latest android OS version?"
